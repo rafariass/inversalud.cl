@@ -1,0 +1,7 @@
+{
+  "name": "rafariass/inversalud2",
+  "description": "InverSalud",
+  "require": {
+    "phpmailer/phpmailer": "^6.1"
+  }
+}

@@ -1,0 +1,171 @@
+
+
+/* ========================================================================
+   Component: Utility
+ ========================================================================== */
+
+
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Container
+ ========================================================================== */
+.uk-container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 20px;
+}
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  .uk-container {
+    max-width: 980px;
+    padding: 0 20px;
+  }
+}
+/*
+ * Micro clearfix
+ */
+.uk-container:before,
+.uk-container:after {
+  content: "";
+  display: table;
+}
+.uk-container:after {
+  clear: both;
+}
+/*
+ * Center container
+ */
+.uk-container-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modifier: `uk-panel-box`
+ ========================================================================== */
+.uk-panel-box {
+  padding: 25px;
+  background: #ffffff;
+  color: #515456;
+}
+.uk-panel-box-hover:hover {
+  color: #515456;
+}
+.uk-panel-box .uk-panel-title {
+  color: #2a2d31;
+}
+.uk-panel-box .uk-panel-badge {
+  top: 25px;
+  right: 25px;
+}
+.uk-panel-box .uk-panel-teaser {
+  margin-top: -25px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+/*
+ * Nav in panel
+ */
+.uk-panel-box > .uk-nav-side {
+  margin: 0 -25px;
+}
+/*
+ * Sub-modifier: `uk-panel-box-primary`
+ */
+.uk-panel-box-primary {
+  background-color: #164370;
+  color: #d1efff;
+}
+.uk-panel-box-primary > a:not([class]),
+.uk-panel-box-primary > :not([class*='uk-nav']) a:not([class]) {
+  color: #ffffff;
+}
+.uk-panel-box-primary > a:not([class]):hover,
+.uk-panel-box-primary > :not([class*='uk-nav']) a:not([class]):hover {
+  color: #000000;
+}
+.uk-panel-box-primary .uk-badge {
+  background: #ffffff;
+  color: #0e2945;
+  text-shadow: none;
+}
+.uk-panel-box-primary-hover:hover {
+  color: #d1efff;
+}
+.uk-panel-box-primary .uk-panel-title {
+  color: #ffffff;
+}
+/*
+ * Sub-modifier: `uk-panel-box-secondary`
+ */
+.uk-panel-box-secondary {
+  background-color: #ffffff;
+  color: #515456;
+}
+.uk-panel-box-secondary-hover:hover {
+  color: #515456;
+}
+.uk-panel-box-secondary .uk-panel-title {
+  color: #2a2d31;
+}
+/* Setting border style for panel-box within tm-content */
+.tm-content .uk-panel-box {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+/* Panel in 'tm-grid-block'
+ ========================================================================== */
+/*
+ * Border style
+ */
+.tm-grid-block > [class*='uk-width-']:nth-child(1n+2) > [class*='uk-panel-box'] {
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+/* Vertical Border - Only tablets and desktop */
+@media (max-width: 768px) {
+  .tm-grid-block > [class*='uk-width-']:nth-child(1n+2) > [class*='uk-panel-box'] {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    border-left: 0;
+  }
+}

@@ -1,0 +1,628 @@
+:root {
+  --inver-color-old: #2081c7;
+  --salud-color-old: #295094;
+  --inver-color-new: #60c8d3;
+  --salud-color-new: #235b90;
+}
+
+body {
+  margin-top: 7rem;
+}
+
+.font-weight-2 {
+  font-weight: 350 !important;
+  text-transform: uppercase !important;
+}
+
+a {
+  color: #17a2b8;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  /* color: #0f6674 !important; */
+  text-decoration: underline;
+  transition: 1s;
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.outline {
+  outline: none;
+}
+
+.texto-logo-ancho {
+  width: 10rem;
+}
+@media (min-width: 1200px) {
+  .texto-logo-ancho {
+    width: 15rem;
+  }
+}
+
+.shadow-sm-footer {
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.text-inver {
+  color: var(--inver-color-new);
+}
+
+.text-salud {
+  color: var(--salud-color-new);
+}
+
+.display-navbar {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (min-width: 720px) {
+  .display-navbar {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+.display-footer {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-footer {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.display-404 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (min-width: 720px) {
+  .display-404 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.display-examen {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (min-width: 720px) {
+  .display-examen {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.rounded-pill {
+  border-radius: 0.3rem !important;
+}
+@media (min-width: 992px) {
+  .rounded-pill {
+    border-radius: 50rem !important;
+  }
+}
+
+.border-menu {
+  border-bottom: 1.5px solid var(--salud-color-new) !important;
+  /* #17a2b8 */
+}
+
+.font-weight-bold2 {
+  font-weight: 400 !important;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 100px;
+  right: 5px;
+  width: 65px;
+  height: 65px;
+  border: 2px solid var(--inver-color-new) !important;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 54 54' style='enable-background:new 0 0 54 54;' xml:space='preserve' width='512px' height='512px' class=''%3e%3cpath style='fill:%23235b90' d='M53,27L53,27c0,14.359-11.641,26-26,26h0C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0 C41.359,1,53,12.641,53,27z' data-original='%234FBA6F' class='' data-old_color='%234FBA6F'/%3e%3cpath style='fill:%23ffffff' d='M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2 C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z' data-original='%234FBA6F' class='' data-old_color='%234FBA6F'/%3e%3cpath style='fill:%23FFFFFF' d='M39,32.706c-0.256,0-0.512-0.098-0.707-0.293L27,21.12L15.707,32.413   c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414l11.498-11.498c0.666-0.666,1.752-0.666,2.418,0l11.498,11.498 c0.391,0.391,0.391,1.023,0,1.414C39.512,32.608,39.256,32.706,39,32.706z' data-original='%23FFFFFF' class='active-path' data-old_color='%23FFFFFF'/%3e%3c/svg%3e");
+  background-size: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .scrollTop {
+    right: 25px;
+    width: 85px;
+    height: 85px;
+    background-size: 75px;
+  }
+}
+
+.scrollTop.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* jumbotron */
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+/* jumbotron-2 */
+.jumbotron-2 {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .jumbotron-2 {
+    padding: 4rem 2rem;
+  }
+}
+
+.lead-navbar {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.lead {
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.lead-2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .lead-2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.small {
+  font-size: 1rem;
+  font-weight: 300;
+  font-size: 80%;
+}
+
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-7 {
+  font-size: 0.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6-2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .display-6-2 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+.prestaciones {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 992px) {
+  .prestaciones {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+.sobre-nosotros {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 992px) {
+  .sobre-nosotros {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+.display-jumbotron {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .display-jumbotron {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+.container-jumbotron {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 50rem;
+}
+
+.container-background {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+}
+
+.wallpaper {
+  background-color: #ffffff !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+}
+/* Fin jumbotron */
+
+.btn-salud {
+  color: #fff;
+  background-color: var(--salud-color-new);
+  border-color: var(--salud-color-new);
+}
+
+.btn-salud:hover {
+  color: #fff;
+  background-color: #1c4871;
+  border-color: #194167;
+}
+
+.btn-salud:focus,
+.btn-salud.focus {
+  color: #fff;
+  background-color: #1c4871;
+  border-color: #194167;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-salud.disabled,
+.btn-salud:disabled {
+  color: #fff;
+  background-color: var(--salud-color-new);
+  border-color: var(--salud-color-new);
+}
+
+.btn-salud:not(:disabled):not(.disabled):active,
+.btn-salud:not(:disabled):not(.disabled).active,
+.show > .btn-salud.dropdown-toggle {
+  color: #fff;
+  background-color: #194167;
+  border-color: #173b5d;
+}
+
+.btn-salud:not(:disabled):not(.disabled):active:focus,
+.btn-salud:not(:disabled):not(.disabled).active:focus,
+.show > .btn-salud.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-outline-salud {
+  color: var(--salud-color-new);
+  border-color: var(--salud-color-new);
+}
+
+.btn-outline-salud:hover {
+  color: #ffffff;
+  background-color: var(--salud-color-new);
+  border-color: var(--salud-color-new);
+  transition: 0.5s ease;
+}
+
+.btn-outline-salud:focus,
+.btn-outline-salud.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-salud.disabled,
+.btn-outline-salud:disabled {
+  color: var(--salud-color-new);
+  background-color: transparent;
+}
+
+.btn-outline-salud:not(:disabled):not(.disabled):active,
+.btn-outline-salud:not(:disabled):not(.disabled).active,
+.show > .btn-outline-salud.dropdown-toggle {
+  color: #fff;
+  background-color: var(--salud-color-new);
+  border-color: var(--salud-color-new);
+}
+
+.btn-outline-salud:not(:disabled):not(.disabled):active:focus,
+.btn-outline-salud:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-salud.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.active-submenu {
+  background-color: var(--salud-color-new);
+  color: #ffffff;
+}
+
+.active-submenu:hover {
+  background-color: var(--salud-color-new);
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.shadow-2 {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (min-width: 1200px) {
+  .shadow-2 {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+}
+
+.sub-rayado {
+  -o-background: -o-linear-gradient(left, var(--inver-color-new) 0%, var(--salud-color-new) 100%) left bottom no-repeat;
+  -moz-background: -moz-linear-gradient(left, var(--inver-color-new) 0%, var(--salud-color-new) 100%) left bottom no-repeat;
+  -webkit-background: -webkit-linear-gradient(left, var(--inver-color-new) 0%, var(--salud-color-new) 100%) left bottom no-repeat;
+  background: linear-gradient(to right, var(--inver-color-new) 0%, var(--salud-color-new) 100%) left bottom no-repeat;
+  background-size: 100% 5px;
+}
+
+.container2 {
+  position: relative;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container2 .card2 {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.container2 .card2:hover {
+  height: 420px;
+}
+
+.container2 .card2 .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container2 .card2 .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container2 .card2 .content2 {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container2 .card2:hover .content2 {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/* BOTTON 404
+-------------------------------------------------- */
+.boton404 {
+  border-radius: 40px;
+
+  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.3);
+
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+
+/* -------------------------------------------------- */
+
+.wallpaper-error {
+  -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/celphone.jpg);
+  -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/celphone.jpg);
+  -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/celphone.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/celphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .wallpaper-error {
+    -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/pc.jpg);
+    -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/pc.jpg);
+    -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/pc.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/error/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.wallpaper-contacto {
+  -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/contacto/celphone.jpg);
+  -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/contacto/celphone.jpg);
+  -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/contacto/celphone.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/contacto/celphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .wallpaper-contacto {
+    -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/contacto/pc.jpg);
+    -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/contacto/pc.jpg);
+    -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/contacto/pc.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/contacto/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.wallpaper-servicos {
+  -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/celphone.jpg);
+  -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/celphone.jpg);
+  -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/celphone.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/celphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .wallpaper-servicos {
+    -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/pc.jpg);
+    -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/pc.jpg);
+    -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/pc.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/servicios/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.wallpaper-postulaciones {
+  -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/celphone.jpg);
+  -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/celphone.jpg);
+  -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/celphone.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/celphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .wallpaper-postulaciones {
+    -o-background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/pc.jpg);
+    -moz-background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/pc.jpg);
+    -webkit-background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/pc.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9)), url(../img/postulaciones/pc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* -------------------------------------------------- */
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--salud-color-new);
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--salud-color-new);
+}
+
+/* -------------------------------------------------- */
+
+
+/* Reescribir custom-file-input de Bootstrap
+-------------------------------------------------- */
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Elegir archivo";
+}
+
+.custom-file-label::after {
+  content: "Elegir archivo";
+}
+/* -------------------------------------------------- */
+
+
+/* carousel - convenios
+-------------------------------------------------- */
+.the-carousel img .ot_image {
+  width: 200px;
+  height: 50px;
+}
+.the-carousel .ot_content {
+  width: 200px;
+  height: 50px;
+  float: left;
+  margin: 2px;
+}
+/* -------------------------------------------------- */

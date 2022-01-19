@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Raul Farias S" />
+    <meta name="generator" content="RaFariasS v1.0.0" />
+    <title>Inversalud</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="source/ico/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="source/ico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="source/ico/favicon-16x16.png" />
+    <link rel="manifest" href="source/ico/site.webmanifest" />
+    <link rel="mask-icon" href="source/ico/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="source/css/bootstrap.css" crossorigin="anonymous" />
+
+    <!-- Optional CSS -->
+    <link rel="stylesheet" href="source/css/style.css" />
+    <link rel="stylesheet" href="source/css/hamburgers.css" />
+    <link rel="stylesheet" href="source/css/imagehover.css" />
+    <link rel="stylesheet" href="source/css/convenios.css" />
+  </head>
+  <body class="user-select-none">
+    <!-- Up Button -->
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <!-- Up Button -->
+
+    <!-- Navbar -->
+    <div class="container-fluid bg-light fixed-top shadow-2 px-0">
+      <div class="m-0 p-0" style="background-color: #235b90">
+        <p class="lead-navbar text-center text-white m-0 px-0 py-1">Trabaje con nosotros.
+          <a href="postulaciones.html" class="text-white font-weight-bold" style="text-decoration: none"><u>Postule aquí</u></a>.
+        </p>
+      </div>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light px-3">
+        <a class="navbar-brand" href="/">
+          <img src="source/img/logos/iso-logo.png" alt="Isotipo InverSalud" class="my-2 mr-2 d-none d-xl-inline" style="width: 3rem" />
+          <img src="source/img/logos/texto-logo.png" alt="Logotipo InverSalud" class="my-2 texto-logo-ancho" />
+        </a>
+        <button
+          class="navbar-toggler hamburger hamburger--elastic"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="/">Inicio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="laboratorio.html">Laboratorio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="ecotomografia.html">Ecotomografía</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar border-menu" href="rayosx_mamografia.html">Rayos X y Mamografía</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="pabellon.html">Pabellón</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="procedimientos.html">Procedimientos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lead-navbar" href="contacto.html">Contáctenos</a>
+            </li>
+          </ul>
+          <button type="button" role="link" onclick="window.open('http://200.111.199.219:84/');" class="btn btn-sm btn-salud lead-navbar ml-xl-3 my-2 my-xl-3 px-3 outline boton404">
+            <i class="fas fa-search"></i> Resultado de Exámenes
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Head
+    <section class="jumbotron wallpaper-servicos mb-0">
+      <div class="container text-center">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-6 shadow-lg p-4 p-sm-5" style="font-family: 'Raleway', sans-serif; background-color: #fff; border-radius: 50px;">
+              <style>
+                .font-responsive {
+                  font-weight: 300;
+                  font-size: 1.05rem !important;
+                }
+
+                @media (max-width: 576px) {
+                  .font-responsive {
+                    font-weight: 300;
+                    font-size: calc(0.8rem + 1vw) !important;
+                  }
+                }
+              </style>
+              <h3 class="font-weight-bold">Retiro de Exámenes</h3>
+              <p class="font-responsive">Queremos cuidarte y que ahorres tiempo. Desde ahora podrás retirar tus resultados de exámenes en nuestra web desde la comodidad de tu casa.</p>
+              <button
+                type="button"
+                role="link"
+                onclick="window.open('http://200.111.199.219:84/');"
+                class="btn btn-salud font-responsive py-3 px-5 font-weight-bold border boton404 shadow-lg"
+              >
+                <i class="fas fa-search"></i> Resultado de Exámenes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Nuestros Servicios -->
+    <div class="container py-3 py-lg-5">
+      <!-- Rayos X y Mamografía -->
+      <div class="pt-5">
+        <div class="row" id="rayosx_mamografia">
+          <div class="col font-italic text-center text-dark">
+            <p class="sobre-nosotros px-lg-5 user-select-none">
+              <span class="sub-rayado pb-2">
+                <span style="color: transparent !important;">--</span>
+                Rayos X y Mamografía
+                <span style="color: transparent !important;">--</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters bg-light position-relative my-5 rounded border align-items-center">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <figure class="imghvr-shutter-out-vert">
+              <img src="source/img/servicios/s_rayosx/radio-01.jpg" class="img-fluid rounded" alt="..." />
+            </figure>
+          </div>
+          <div class="col-md-6 position-static p-4 pl-md-0">
+            <p class="mt-0 px-lg-4 display-6-2 font-weight-2">Radiografia</p>
+            <p class="font-responsive px-lg-4">
+              <i class="fas fa-check"></i> Cráneo. <br /><i class="fas fa-check"></i> Tórax. <br /><i class="fas fa-check"></i> Columna vertebral. <br /><i class="fas fa-check"></i> Abdomen.
+              <br /><i class="fas fa-check"></i> Extremidades.
+            </p>
+          </div>
+          <div class="container-fluid justify-content-center align-items-center">
+            <hr class="col-11 col-lg-9" style="background-color: #235b90;" />
+          </div>
+          <div class="col-md-6 mb-md-0 p-4">
+            <p class="mt-0 display-6-2 font-weight-2">Mamografia</p>
+            <p class="font-responsive">
+              <i class="fas fa-check"></i>
+              Exámen para la detección y prevención del cáncer de mama. Este procedimiento se hace en forma rápida y sencilla sin que el paciente necesite una preparación especial.
+            </p>
+          </div>
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <div class="card border-0">
+              <figure class="imghvr-shutter-in-vert">
+                <img src="source/img/servicios/s_rayosx/mamo-01.jpg" class="img-fluid rounded" alt="..." />
+              </figure>
+            </div>
+          </div>
+
+          <!-- Contactos -->
+          <div class="container-fluid justify-content-center align-items-center">
+            <hr class="col-11 col-lg-9" style="background-color: #235b90;" />
+          </div>
+          <div class="col-12 position-static p-4 pl-md-0">
+            <div class="row justify-content-center">
+              <div class="col-4 text-center">
+                <a href="tel:+56342372006" style="text-decoration: none;">
+                  <img src="source/img/servicios/icon/phone.png" class="img-fluid rounded" alt="Phone Icon" style="width: 80px; border-radius: 50%;" />
+                  <p class="lead pt-1 d-none d-lg-block">+56 34 237 2006</p>
+                </a>
+              </div>
+              <div class="col-4 text-center">
+                <a href="mailto:contacto@inversalud.cl" style="text-decoration: none;">
+                  <img src="source/img/servicios/icon/email.png" class="img-fluid rounded" alt="e-mail Icon" style="width: 80px; border-radius: 50%;" />
+                  <p class="lead pt-1 d-none d-lg-block">contacto@inversalud.cl</p>
+                </a>
+              </div>
+              <div class="col-4 text-center">
+                <a href="https://wa.me/56940046335?text=Hola,%20necesito%20más%20información." target="_blank" style="text-decoration: none;">
+                  <img src="source/img/servicios/icon/whatsapp.png" class="img-fluid rounded" alt="Whatsapp Icon" style="width: 80px; border-radius: 50%;" />
+                  <p class="lead pt-1 d-none d-lg-block">+56 9 4004 6335</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Contactos -->
+        </div>
+      </div>
+      <!-- Rayos X y Mamografía -->
+    </div>
+    <!-- Nuestros Servicios -->
+
+    <!-- convenios -->
+    <div class="pb-3 pb-lg-5">
+      <div class="container pb-5">
+        <div class="uk-container uk-container-center">
+          <div class="tm-middle uk-grid" data-uk-grid-match>
+            <div class="tm-main uk-width-medium-1-1">
+              <div class="tm-main-bottom uk-grid tm-grid-block" data-uk-grid-match="{target:'> div > .uk-panel'}">
+                <div class="uk-width-1-1">
+                  <div class="uk-panel uk-panel-box">
+                    <div class="ot_logo_scroller" id="ot_logo_scroller_156">
+                      <div class="the-carousel">
+                        <div class="ot_content">
+                          <a target="_blank" href="https://www.fonasa.c">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/fonasa.jpg" alt="fonasa"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="http://www.banmedica.cl">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/banmedica.jpg" alt="banmedica"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="http://www.colmena.cl">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/colmena.jpg" alt="colmena"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="http://www.consalud.cl">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/consalud.jpg" alt="consalud"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="http://www.cruzblanca.cl">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/cruzblanca.jpg" alt="cruzblanca"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="http://www.vidatres.cl">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/vidatres.jpg" alt="vidatres"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="https://www.isapredecodelco.cl/">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/isalud.jpg" alt="isalud"/>
+                          </a>
+                        </div>
+                        <div class="ot_content">
+                          <a target="_blank" href="https://www.transbank.cl/">
+                            <img class="ot_image px-2" src="source/img/home/s_convenios/transbank.jpg" alt="transbank"/>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- convenios -->
+
+    <!-- Footer -->
+    <div class="text-dark bg-light mt-0 pt-3 pb-2 shadow-sm-footer">
+      <div class="container-fluid pt-3">
+        <div class="row justify-content-center py-2">
+          <!-- Columna 1 -->
+          <div class="col-12 col-md-4 px-3 pb-5 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410.85 223.31" class="w-50">
+              <defs>
+                <style>
+                  .cls-1 {
+                    isolation: isolate;
+                  }
+                  .cls-2 {
+                    fill: #60c8d3;
+                  }
+                  .cls-3 {
+                    fill: #235b90;
+                  }
+                  .cls-4 {
+                    fill: #011843;
+                  }
+                  .cls-5 {
+                    fill: none;
+                  }
+                  .cls-6 {
+                    mix-blend-mode: screen;
+                    fill: url(#linear-gradient);
+                  }
+                  .cls-7,
+                  .cls-8 {
+                    fill: #231f20;
+                    mix-blend-mode: multiply;
+                  }
+                  .cls-8 {
+                    opacity: 0.6;
+                  }
+                </style>
+                <linearGradient id="linear-gradient" x1="194.23" y1="115.04" x2="273.23" y2="-65.96" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                  <stop offset="0.15" stop-color="#f8fafb" stop-opacity="0.03" />
+                  <stop offset="0.32" stop-color="#e4ebf1" stop-opacity="0.12" />
+                  <stop offset="0.5" stop-color="#c2d1e0" stop-opacity="0.28" />
+                  <stop offset="0.68" stop-color="#92aec8" stop-opacity="0.49" />
+                  <stop offset="0.87" stop-color="#5681aa" stop-opacity="0.77" />
+                  <stop offset="1" stop-color="#235b90" />
+                </linearGradient>
+              </defs>
+              <g class="cls-1">
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Capa_1" data-name="Capa 1">
+                    <path class="cls-2" d="M0,222.5V176.42H9.31V222.5Z" />
+                    <path class="cls-2" d="M18.27,222.5V176.42h9l18.86,30.77V176.42h8.65V222.5H45.48L26.91,192.44V222.5Z" />
+                    <path class="cls-2" d="M76.41,222.5,59.94,176.42H70l11.66,34.1L93,176.42h9.86L86.34,222.5Z" />
+                    <path class="cls-2" d="M107.59,222.5V176.42h34.17v7.79H116.9v10.22H140v7.76H116.9v12.54h25.74v7.77Z" />
+                    <path
+                      class="cls-2"
+                      d="M150.56,222.5V176.42h19.58c4.92,0,8.51.41,10.74,1.24a10.55,10.55,0,0,1,5.35,4.41,13.22,13.22,0,0,1,2,7.26,12.32,12.32,0,0,1-3.05,8.57q-3,3.38-9.12,4.26a21.73,21.73,0,0,1,5,3.86,52.88,52.88,0,0,1,5.3,7.48l5.63,9H180.86l-6.73-10a65.85,65.85,0,0,0-4.9-6.78,7.05,7.05,0,0,0-2.8-1.91,15.13,15.13,0,0,0-4.68-.52h-1.89V222.5Zm9.3-26.6h6.89q6.69,0,8.36-.56a5,5,0,0,0,2.61-2,6.05,6.05,0,0,0,.94-3.46,5.54,5.54,0,0,0-1.24-3.76,5.72,5.72,0,0,0-3.51-1.8q-1.12-.17-6.79-.16h-7.26Z"
+                    />
+                    <path
+                      class="cls-3"
+                      d="M194.66,207.5l9.05-.88c.55,3,1.65,5.27,3.32,6.7a10,10,0,0,0,6.74,2.14c3,0,5.25-.64,6.77-1.91a5.64,5.64,0,0,0,2.28-4.44,4.22,4.22,0,0,0-1-2.79,7.58,7.58,0,0,0-3.34-2c-1.09-.38-3.58-1.05-7.45-2q-7.48-1.86-10.5-4.56a12,12,0,0,1-4.25-9.27,11.86,11.86,0,0,1,2-6.59,12.54,12.54,0,0,1,5.75-4.67,23.07,23.07,0,0,1,9.07-1.6q8.67,0,13.06,3.8a13.46,13.46,0,0,1,4.61,10.16l-9.31.4a7.89,7.89,0,0,0-2.56-5.1q-2-1.56-5.89-1.56A10.62,10.62,0,0,0,206.7,185a3.34,3.34,0,0,0-1.48,2.86,3.52,3.52,0,0,0,1.38,2.79q1.77,1.48,8.55,3.09a44.56,44.56,0,0,1,10,3.31,12.9,12.9,0,0,1,5.1,4.68,13.76,13.76,0,0,1,1.84,7.34,13.55,13.55,0,0,1-2.21,7.42,13.12,13.12,0,0,1-6.22,5.14,26.1,26.1,0,0,1-10,1.68q-8.73,0-13.42-4T194.66,207.5Z"
+                    />
+                    <path class="cls-3" d="M281.51,222.5H271.38l-4-10.47H248.94l-3.8,10.47h-9.87l17.95-46.08h9.84Zm-17.14-18.24L258,187.17l-6.23,17.09Z" />
+                    <path class="cls-3" d="M286.69,222.5V176.79H296v37.94h23.13v7.77Z" />
+                    <path
+                      class="cls-3"
+                      d="M325.7,176.42H335v25a51.58,51.58,0,0,0,.35,7.7,7.43,7.43,0,0,0,2.84,4.54,9.88,9.88,0,0,0,6.15,1.72q4,0,6-1.62a6.4,6.4,0,0,0,2.42-4,52.06,52.06,0,0,0,.41-7.82V176.42h9.3v24.2a62.48,62.48,0,0,1-.75,11.72,13,13,0,0,1-2.78,5.79,14.08,14.08,0,0,1-5.43,3.75,23.59,23.59,0,0,1-8.86,1.4q-6.6,0-10-1.52a14.34,14.34,0,0,1-5.39-4,12.77,12.77,0,0,1-2.61-5.11A55.82,55.82,0,0,1,325.7,201Z"
+                    />
+                    <path
+                      class="cls-3"
+                      d="M372.22,176.42h17a33.54,33.54,0,0,1,8.77.87,15.52,15.52,0,0,1,6.95,4.25,20.15,20.15,0,0,1,4.4,7.46,34.24,34.24,0,0,1,1.51,10.9,30,30,0,0,1-1.42,9.8,20.24,20.24,0,0,1-4.93,8.14,16.4,16.4,0,0,1-6.54,3.68,28.09,28.09,0,0,1-8.23,1H372.22Zm9.3,7.79v30.52h7a24.86,24.86,0,0,0,5.62-.44,8.7,8.7,0,0,0,3.76-1.91,9.89,9.89,0,0,0,2.44-4.46,29.94,29.94,0,0,0,.94-8.43,27.52,27.52,0,0,0-.94-8.21,10.61,10.61,0,0,0-2.64-4.46,8.87,8.87,0,0,0-4.31-2.17,42.57,42.57,0,0,0-7.64-.44Z"
+                    />
+                    <path
+                      class="cls-4"
+                      d="M269.48,45.47a101,101,0,0,1-64,93.94c-32.93-4.78-26.81-112.78-26.81-112.78a21.16,21.16,0,0,0,15.71-9c.1-.12.18-.25.27-.38A41.2,41.2,0,0,1,255,9.91a42.48,42.48,0,0,1,6.18,6.6,41.13,41.13,0,0,1,7.71,18.29c.24,2.21.41,4.44.49,6.69v.22C269.45,43,269.48,44.21,269.48,45.47Z"
+                    />
+                    <path class="cls-5" d="M178.7,26.63l-.3,0c-.75-1-1.56-1.95-2.38-2.86Z" />
+                    <path class="cls-5" d="M105,62.75l-.69-.53q-.37-3.06-.56-6.17A44.53,44.53,0,0,0,105,62.75Z" />
+                    <path class="cls-5" d="M178.7,26.63l-.3,0c-.75-1-1.56-1.95-2.38-2.86Z" />
+                    <path class="cls-5" d="M103.71,55.76c-.13-1.31-.19-2.63-.19-4,0-.41,0-.83,0-1.24C103.55,52.3,103.61,54,103.71,55.76Z" />
+                    <path class="cls-5" d="M105,62.75l-.69-.53q-.37-3.06-.56-6.17A44.53,44.53,0,0,0,105,62.75Z" />
+                    <path class="cls-5" d="M178.7,26.63l-.3,0c-.75-1-1.56-1.95-2.38-2.86Z" />
+                    <path class="cls-5" d="M103.71,55.76c-.13-1.31-.19-2.63-.19-4,0-.41,0-.83,0-1.24C103.55,52.3,103.61,54,103.71,55.76Z" />
+                    <path
+                      class="cls-6"
+                      d="M269.48,45.47a101,101,0,0,1-64,93.94c-32.93-4.78-26.81-112.78-26.81-112.78a21.16,21.16,0,0,0,15.71-9c.1-.12.18-.25.27-.38A41.2,41.2,0,0,1,255,9.91a42.48,42.48,0,0,1,6.18,6.6,41.13,41.13,0,0,1,7.71,18.29c.24,2.21.41,4.44.49,6.69v.22C269.45,43,269.48,44.21,269.48,45.47Z"
+                    />
+                    <path class="cls-5" d="M178.7,26.63l-.3,0c-.75-1-1.56-1.95-2.38-2.86Z" />
+                    <path class="cls-5" d="M103.71,55.76c-.13-1.31-.19-2.63-.19-4,0-.41,0-.83,0-1.24C103.55,52.3,103.61,54,103.71,55.76Z" />
+                    <line class="cls-5" x1="178.7" y1="26.63" x2="176.02" y2="23.79" />
+                    <path
+                      class="cls-7"
+                      d="M208.66,123.16c-1.26.91-5.44,4-7.29,4.17-.08-1.46-4.74-4.82-4.78-6.29,10.06-7.61-17.89-94.41-17.89-94.41a21.77,21.77,0,0,0,2.57-.36l7.91,8.2L210.3,56.34a42.9,42.9,0,0,1,6.57,8,41.51,41.51,0,0,1,2.79,5,45.7,45.7,0,0,1,3.77,12.18A49.2,49.2,0,0,1,224,87.4,45.09,45.09,0,0,1,208.66,123.16Z"
+                    />
+                    <path
+                      class="cls-3"
+                      d="M220.37,87.13a41.62,41.62,0,0,1-16.55,33.24C186,131.67,108.28,70,104.29,62.22q-.37-3.06-.56-6.17a1.42,1.42,0,0,0,0-.29c-.1-1.72-.16-3.46-.16-5.21v-.09a41.64,41.64,0,0,1,72.37-26.77l2.79,2.94,8.67,9.15,20.37,21.47a41.91,41.91,0,0,1,6.3,7.79,39.58,39.58,0,0,1,2.6,4.85,41.61,41.61,0,0,1,3.72,17.24Z"
+                    />
+                    <path class="cls-8" d="M180.12,56.26a22.64,22.64,0,1,1-22.63-22.63A22.64,22.64,0,0,1,180.12,56.26Z" />
+                    <path class="cls-2" d="M176.94,54.46A21.26,21.26,0,1,1,155.68,33.2,21.26,21.26,0,0,1,176.94,54.46Z" />
+                    <path class="cls-8" d="M215.43,134.86a96.61,96.61,0,0,1-9.91,4.55c-5.56-5.29-13.89-42.71,5.6-66.55a142,142,0,0,0,4.31,62Z" />
+                    <path
+                      class="cls-2"
+                      d="M209.52,77.88a138.37,138.37,0,0,0-5.73,39.54c0,1,0,2,0,3a140.34,140.34,0,0,0,1.7,19,138.05,138.05,0,0,0,3.9,17.23,106.43,106.43,0,0,1-44.65-10.32,107.28,107.28,0,0,1-60.48-84.1l.69.53A100.08,100.08,0,0,0,137.8,79.36a100.45,100.45,0,0,0,28.35,4q3.21,0,6.39-.2a100.49,100.49,0,0,0,32.88-7.72q2.9-1.23,5.7-2.63Q210.27,75.35,209.52,77.88Z"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <br />
+            <p class="lead">
+              <br /><span class="font-weight-bold"> Nos ubicamos en:</span><br />
+              <i class="fas fa-map-marker-alt text-muted"></i> Merced 552, San Felipe.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.5824730618488!2d-70.73155308481863!3d-32.750275780980104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968816c5f04cccc5%3A0x43fd341dd932f65c!2sCentro%20Medico%20Integral%20Aconcagua!5e0!3m2!1ses-419!2scl!4v1593908936701!5m2!1ses-419!2scl"
+              class="w-100 h-50 img-fluid my-2 shadow-sm"
+              style="border: 5px solid #dee2e6 !important; border-color: #fff !important;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+          <!-- Columna 2 -->
+          <div class="col-12 col-md-4 col-lg-3 text-left">
+            <p class="lead">
+              <i class="far fa-clock text-muted"></i>
+              Horarios de atención:<br />
+              Lunes a Viernes de 8:00 a 18:00 hrs.<br />
+              Sábados de 9:00 a 13:00 hrs.<br /><br />
+
+              Contactenos a:<br />
+
+              Laboratorio:<br />
+              <i class="fas fa-phone-volume text-muted"></i> <a href="tel:+56342372006" class="navbar-brand lead"> +56 34 237 2006</a><br />
+              <i class="fab fa-whatsapp text-muted"></i>
+              <a href="https://wa.me/56944284978?text=Hola,%20necesito%20más%20información." target="_blank" class="navbar-brand lead"> +56 9 4428 4978</a><br />
+              <a href="mailto:tomademuestras@inversalud.cl" class="navbar-brand lead"> tomademuestras@inversalud.cl</a><br /><br />
+
+              Ecotomografía:<br />
+              <i class="fas fa-phone-volume text-muted"> </i> <a href="tel:+56342372028" class="navbar-brand lead"> +56 34 237 2028</a><br />
+              <i class="fab fa-whatsapp text-muted"> </i>
+              <a href="https://wa.me/56944413793?text=Hola,%20necesito%20más%20información." target="_blank" class="navbar-brand lead"> +56 9 4441 3793</a><br />
+              <a href="mailto:ecotomografia@inversalud.cl" class="navbar-brand lead"> ecotomografia@inversalud.cl</a><br /><br />
+            </p>
+          </div>
+          <!-- Columna 3 -->
+          <div class="col-12 col-md-4 col-lg-3 text-left">
+            <p class="lead">
+              Rayos X y Mamografía:<br />
+              <i class="fas fa-phone-volume text-muted"></i> <a href="tel:+56342372006" class="navbar-brand lead"> +56 34 237 2006</a><br />
+              <i class="fab fa-whatsapp text-muted"></i>
+              <a href="https://wa.me/56940046335?text=Hola,%20necesito%20más%20información." target="_blank" class="navbar-brand lead"> +56 9 4004 6335</a><br />
+              <a href="mailto:contacto@inversalud.cl" class="navbar-brand lead"> contacto@inversalud.cl</a><br /><br />
+
+              Pabellón:<br />
+              <i class="fas fa-phone-volume text-muted"></i> <a href="tel:+56342372098" class="navbar-brand lead"> +56 34 237 2098</a><br />
+              <i class="fab fa-whatsapp text-muted"></i>
+              <a href="https://wa.me/56944115426?text=Hola,%20necesito%20más%20información." target="_blank" class="navbar-brand lead"> +56 9 4411 5426</a><br />
+              <a href="mailto:pabellon@Inversalud.cl" class="navbar-brand lead"> pabellon@Inversalud.cl</a><br /><br />
+
+              Procedimientos:<br />
+              <i class="fas fa-phone-volume text-muted"></i> <a href="tel:+56342372006" class="navbar-brand lead"> +56 34 237 2006</a><br />
+              <i class="fab fa-whatsapp text-muted"></i>
+              <a href="https://wa.me/56940046335?text=Hola,%20necesito%20más%20información." target="_blank" class="navbar-brand lead"> +56 9 4004 6335</a><br />
+              <a href="mailto:contacto@inversalud.cl" class="navbar-brand lead"> contacto@inversalud.cl</a><br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="container-fluid justify-content-center align-items-center">
+          <hr class="col-11 col-lg-9 bg-secondary" />
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <p class="lead text-center mb-0" style="font-size: 0.9rem;">
+            InverSalud&#174; &#0169;2020 a
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            - Todos los derechos reservados. <br />Created by
+            <a href="https://www.rafariass.cl" target="_blank" class="text-dark font-weight-bold" style="text-decoration: none;">
+              <i class="fas fa-terminal"></i>
+              RaFariasS
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script crossorigin="anonymous" src="source/js/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="source/js/jquery.min.js" crossorigin="anonymous"></script>
+
+    <script src="source/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="source/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="source/js/hamburgers.js"></script>
+    <script src="source/js/scrollToTop.js"></script>
+    <script src="source/js/tooltip.js"></script>
+    <script src="source/js/fontawesome.js"></script>
+
+    <script src="source/js/jquery.carousel.js"></script>
+    <script src="source/js/convenios.js"></script>
+  </body>
+</html>
